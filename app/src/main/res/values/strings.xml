@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Do It</string>
+    <string name="save">Save</string>
+    <string name="new_task">New Task</string>
+    <string name="tasks">Tasks</string>
+    <string name="log_in">Log in</string>
+    <string name="create_your_n_account">Create Your \n Account</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re Password</string>
+    <string name="join_us">Join Us</string>
+    <string name="by_pressing_join_us_you_agree_n_to_our_trems_and_conditions">By Pressing \'Join Us\' You agree\n to our trems and conditions</string>
+</resources>
