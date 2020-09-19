@@ -30,10 +30,11 @@ public class LoginScreen extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     String email = e1.getText().toString();
-                    String password = e1.getText().toString();
+                    String password = e2.getText().toString();
                     Boolean chkemailpass = db.emailPassword(email , password);
                     if(chkemailpass==true){
-                        Toast.makeText(getApplicationContext() , "Success" , Toast.LENGTH_SHORT).show();
+                        Intent ic = new Intent(LoginScreen.this,MainActivity.class);
+                        startActivity(ic);
                     }
                     else {
                         Toast.makeText(getApplicationContext() , "WRONG" , Toast.LENGTH_SHORT).show();
@@ -51,8 +52,4 @@ public class LoginScreen extends AppCompatActivity {
         startActivity(ic);
     }
 
-    public void navigateClick(View view) {
-        Intent ic = new Intent(LoginScreen.this,MainActivity.class);
-        startActivity(ic);
-    }
 }
