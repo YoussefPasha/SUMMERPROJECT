@@ -33,6 +33,7 @@ public class LoginScreen extends AppCompatActivity {
                     String password = e2.getText().toString();
                     Boolean chkemailpass = db.emailPassword(email , password);
                     if(chkemailpass==true){
+                        DatabaseHandler.NAME = email;
                         Intent ic = new Intent(LoginScreen.this,MainActivity.class);
                         startActivity(ic);
                     }

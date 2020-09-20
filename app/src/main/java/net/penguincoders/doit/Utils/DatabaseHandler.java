@@ -14,7 +14,7 @@ import java.util.List;
 public class DatabaseHandler extends SQLiteOpenHelper {
 
     private static final int VERSION = 1;
-    private static final String NAME = "toDoListDatabase";
+    public static String NAME ;
     private static final String TODO_TABLE = "todo";
     private static final String ID = "id";
     private static final String TASK = "task";
